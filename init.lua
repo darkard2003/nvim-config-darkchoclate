@@ -1,5 +1,4 @@
-require "user.options"
-require "user.keymap" 
+require "user.options" require "user.keymap" 
 require "plugins.plugins"
 require "user.onedark-setup"
 require "user.cmp"

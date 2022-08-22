@@ -46,6 +46,9 @@ return require('packer').startup(function(use)
 
 	-- Using Packer
 	use 'navarasu/onedark.nvim'	
+	
+	-- Useing lua cmp config
+	use 'hrsh7th/cmp-nvim-lua'
 
 	-- Nvim tree plugin
 	use {
@@ -73,4 +76,12 @@ return require('packer').startup(function(use)
 	
 	-- Vim PIO
 	use 'normen/vim-pio'
+
+	-- Some common dependency (currently required for telescope)
+	use 'nvim-lua/plenary.nvim'
+	use 'BurntSushi/ripgrep'
+
+	-- Nvim telescope
+	use 'nvim-telescope/telescope.nvim'	
+
 end)
