@@ -104,6 +104,10 @@ return require('packer').startup(function(use)
   requires = { 'kyazdani42/nvim-web-devicons', opt = true }
 }
 
+	-- Flutter tools
 	use "akinsho/flutter-tools.nvim"
+
+	-- Bufferline
+	use {'akinsho/bufferline.nvim', tag = "v2.*", requires = 'kyazdani42/nvim-web-devicons'}
 
 end)

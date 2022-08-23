@@ -131,3 +131,15 @@ cmp.setup {
     native_menu = false,
   },
 }
+
+
+local ok_status, autopairs = pcall(require, 'nvim-autopairs.completion.cmp')
+if not ok_status then
+	print "cmp-autopairs not configured"
+	return
+end
+
+cmp.event:on(
+  'confirm_done',
+  autopairs.on_confirm_done()
+)
