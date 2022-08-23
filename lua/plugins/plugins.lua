@@ -44,11 +44,16 @@ return require('packer').startup(function(use)
 	-- Packer manage itself
 	use 'wbthomason/packer.nvim'
 
-	-- Using Packer
+	-- Themes
 	use 'navarasu/onedark.nvim'	
-	
+	use 'shapeoflambda/dark-purple.vim'
+	use 'Rigellute/shades-of-purple.vim'
+
 	-- Useing lua cmp config
 	use 'hrsh7th/cmp-nvim-lua'
+
+	-- Devicons 
+	use 'kyazdani42/nvim-web-devicons'
 
 	-- Nvim tree plugin
 	use {
@@ -83,5 +88,22 @@ return require('packer').startup(function(use)
 
 	-- Nvim telescope
 	use 'nvim-telescope/telescope.nvim'	
+
+	-- Treesitter 
+	use 'nvim-treesitter/nvim-treesitter'
+
+	-- Autopairs 
+	use {
+	"windwp/nvim-autopairs",
+    config = function() require("nvim-autopairs").setup {} end
+}
+	
+	-- Lualine
+	use {
+  'nvim-lualine/lualine.nvim',
+  requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+}
+
+	use "akinsho/flutter-tools.nvim"
 
 end)

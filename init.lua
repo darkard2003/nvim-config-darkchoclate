@@ -1,8 +1,11 @@
-require "user.options" require "user.keymap" 
+require "user.options"
+require "user.keymap"
 require "plugins.plugins"
 require "user.onedark-setup"
 require "user.cmp"
 require "user.lsp"
+require "user.treesitter"
+require "user.lualine"
 
 require("nvim-tree").setup({
   sort_by = "case_sensitive",
@@ -22,3 +25,4 @@ require("nvim-tree").setup({
   },
 })
 
+require "user.flutter"

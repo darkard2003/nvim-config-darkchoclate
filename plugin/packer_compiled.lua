@@ -104,10 +104,31 @@ _G.packer_plugins = {
     path = "C:\\Users\\kmc20\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
+  ["dark-purple.vim"] = {
+    loaded = true,
+    path = "C:\\Users\\kmc20\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\dark-purple.vim",
+    url = "https://github.com/shapeoflambda/dark-purple.vim"
+  },
+  ["flutter-tools.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\kmc20\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\flutter-tools.nvim",
+    url = "https://github.com/akinsho/flutter-tools.nvim"
+  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "C:\\Users\\kmc20\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
+  },
+  ["lualine.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\kmc20\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lualine.nvim",
+    url = "https://github.com/nvim-lualine/lualine.nvim"
+  },
+  ["nvim-autopairs"] = {
+    config = { "\27LJ\2\n@\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\19nvim-autopairs\frequire\0" },
+    loaded = true,
+    path = "C:\\Users\\kmc20\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-autopairs",
+    url = "https://github.com/windwp/nvim-autopairs"
   },
   ["nvim-cmp"] = {
     loaded = true,
@@ -128,6 +149,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\kmc20\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-tree.lua",
     url = "https://github.com/kyazdani42/nvim-tree.lua"
+  },
+  ["nvim-treesitter"] = {
+    loaded = true,
+    path = "C:\\Users\\kmc20\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-treesitter",
+    url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
@@ -154,6 +180,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\kmc20\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\ripgrep",
     url = "https://github.com/BurntSushi/ripgrep"
   },
+  ["shades-of-purple.vim"] = {
+    loaded = true,
+    path = "C:\\Users\\kmc20\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\shades-of-purple.vim",
+    url = "https://github.com/Rigellute/shades-of-purple.vim"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "C:\\Users\\kmc20\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\telescope.nvim",
@@ -167,6 +198,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: nvim-autopairs
+time([[Config for nvim-autopairs]], true)
+try_loadstring("\27LJ\2\n@\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\19nvim-autopairs\frequire\0", "config", "nvim-autopairs")
+time([[Config for nvim-autopairs]], false)
 if should_profile then save_profiles() end
 
 end)
