@@ -6,9 +6,11 @@ local term_opts = { silent = true }
 local km = vim.api.nvim_set_keymap
 
 -- Remap space as leader key
-km("n", "<Space>", "<Nop", opts)
+km("n", "<Space>", "<Nop>", opts)
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
+
+km("n", "<C-b>", "<C-v>", opts)
 
 -- Terminal options
 km("t", "<C-h>", "<C-\\><C-n><C-h>", term_opts)
@@ -16,8 +18,13 @@ km("t", "<C-j>", "<C-\\><C-n><C-j>", term_opts)
 km("t", "<C-k>", "<C-\\><C-n><C-k>", term_opts)
 km("t", "<C-l>", "<C-\\><C-n><C-l>", term_opts)
 
-km("n", "<leader>/", "15:sp | term<cr>i", opts)
-km("t", "<Esc>", "<C-\\><C-n>:q<cr>", term_opts)
+km("n", "<leader>/", ":10sp|term<cr>i", opts)
+km("t", "<Esc>", "<C-\\><C-n>:bw!<cr>", term_opts)
+km("t", "<C-l>", "<C-\\><C-n><C-w>l", term_opts)
+km("t", "<C-k>", "<C-\\><C-n><C-w>k", term_opts)
+km("t", "<C-j>", "<C-\\><C-n><C-w>j", term_opts)
+km("t", "<C-h>", "<C-\\><C-n><C-w>h", term_opts)
+
 
 -- Better window navigation
 km("n", "<C-h>", "<C-w>h", opts)
@@ -44,3 +51,6 @@ km("i", "jk", "<Esc>", opts)
 -- Telescope keybindings
 km('n', '<leader>f', ':Telescope find_files<cr>', opts)
 km('n', '<c-t>', ':Telescope grep_string<cr>', opts)
+
+-- FormattingOptions
+km('n', 'ff', ':Format<CR>', opts)

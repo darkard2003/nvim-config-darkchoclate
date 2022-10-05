@@ -40,31 +40,33 @@ packer.init({
 
 
 return require('packer').startup(function(use)
-	
+
 	-- Packer manage itself
 	use 'wbthomason/packer.nvim'
 
 	-- Themes
-	use 'navarasu/onedark.nvim'	
+	use 'navarasu/onedark.nvim'
 	use 'shapeoflambda/dark-purple.vim'
 	use 'Rigellute/shades-of-purple.vim'
+	use 'Mofiqul/dracula.nvim'
+	use 'metalelf0/jellybeans-nvim'
 
 	-- Useing lua cmp config
 	use 'hrsh7th/cmp-nvim-lua'
 
-	-- Devicons 
+	-- Devicons
 	use 'kyazdani42/nvim-web-devicons'
 
 	-- Nvim tree plugin
 	use {
-  'kyazdani42/nvim-tree.lua',
-  requires = {
-    'kyazdani42/nvim-web-devicons', -- optional, for file icons
-  },
-  tag = 'nightly' -- optional, updated every week. (see issue #1193)
+		'kyazdani42/nvim-tree.lua',
+		requires = {
+			'kyazdani42/nvim-web-devicons', -- optional, for file icons
+		},
+		tag = 'nightly' -- optional, updated every week. (see issue #1193)
 
-}
-	
+	}
+
 	-- vim-cmp config
 	use 'hrsh7th/cmp-nvim-lsp'
 	use 'hrsh7th/cmp-buffer'
@@ -74,40 +76,47 @@ return require('packer').startup(function(use)
 	use 'L3MON4D3/LuaSnip'
 	use 'saadparwaiz1/cmp_luasnip'
 	use "rafamadriz/friendly-snippets"
-	
+
 	-- lsp server config
 	use 'neovim/nvim-lspconfig'
 	use 'williamboman/nvim-lsp-installer'
-	
+
 	-- Vim PIO
 	use 'normen/vim-pio'
 
 	-- Some common dependency (currently required for telescope)
 	use 'nvim-lua/plenary.nvim'
 	use 'BurntSushi/ripgrep'
+	use 'rktjmp/lush.nvim'
 
 	-- Nvim telescope
-	use 'nvim-telescope/telescope.nvim'	
+	use 'nvim-telescope/telescope.nvim'
 
-	-- Treesitter 
+	-- Treesitter
 	use 'nvim-treesitter/nvim-treesitter'
 
-	-- Autopairs 
+	-- Autopairs
 	use {
-	"windwp/nvim-autopairs",
-    config = function() require("nvim-autopairs").setup {} end
-}
-	
+		"windwp/nvim-autopairs",
+		config = function() require("nvim-autopairs").setup {} end
+	}
+
 	-- Lualine
 	use {
-  'nvim-lualine/lualine.nvim',
-  requires = { 'kyazdani42/nvim-web-devicons', opt = true }
-}
+		'nvim-lualine/lualine.nvim',
+		requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+	}
 
 	-- Flutter tools
 	use "akinsho/flutter-tools.nvim"
 
 	-- Bufferline
-	use {'akinsho/bufferline.nvim', tag = "v2.*", requires = 'kyazdani42/nvim-web-devicons'}
+	use { 'akinsho/bufferline.nvim', tag = "v2.*", requires = 'kyazdani42/nvim-web-devicons' }
+
+	-- Comments on nvim
+	use "terrortylor/nvim-comment"
+
+	-- Formatting
+	use 'jose-elias-alvarez/null-ls.nvim'
 
 end)
