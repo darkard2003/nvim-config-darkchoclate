@@ -4,6 +4,7 @@ if not ok_status then
 	return
 end
 
-ftools.setup{}
+ftools.setup {
+}
 
 return ftools

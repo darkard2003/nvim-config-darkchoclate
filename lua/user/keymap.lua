@@ -50,7 +50,7 @@ km("i", "jk", "<Esc>", opts)
 
 -- Telescope keybindings
 km('n', '<leader>f', ':Telescope find_files<cr>', opts)
-km('n', '<c-t>', ':Telescope grep_string<cr>', opts)
+km('n', '<leader>g', ':Telescope grep_string<cr>', opts)
 
 -- FormattingOptions
 km('n', 'ff', ':Format<CR>', opts)

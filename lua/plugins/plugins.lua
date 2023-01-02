@@ -50,6 +50,10 @@ return require('packer').startup(function(use)
 	use 'Rigellute/shades-of-purple.vim'
 	use 'Mofiqul/dracula.nvim'
 	use 'metalelf0/jellybeans-nvim'
+	use 'svrana/neosolarized.nvim'
+
+	--Colorbuddy
+	use 'tjdevries/colorbuddy.nvim'
 
 	-- Useing lua cmp config
 	use 'hrsh7th/cmp-nvim-lua'

@@ -114,6 +114,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\kmc20\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
+  ["colorbuddy.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\kmc20\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\colorbuddy.nvim",
+    url = "https://github.com/tjdevries/colorbuddy.nvim"
+  },
   ["dark-purple.vim"] = {
     loaded = true,
     path = "C:\\Users\\kmc20\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\dark-purple.vim",
@@ -148,6 +153,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\kmc20\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lush.nvim",
     url = "https://github.com/rktjmp/lush.nvim"
+  },
+  ["neosolarized.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\kmc20\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\neosolarized.nvim",
+    url = "https://github.com/svrana/neosolarized.nvim"
   },
   ["null-ls.nvim"] = {
     loaded = true,
